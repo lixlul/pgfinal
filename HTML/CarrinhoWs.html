@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="shortcut icon" href="/img/Título.png" type="image/x-icon">
+    <link rel="stylesheet" href="/CSS/CarrinhoWS.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="WomanSecret.html">Home</a></li>
+            <li><a href="SobreWs.html">Sobre</a></li>
+            <li class="dropdown">
+                <a href="produtosWs.html" class="dropbtn">Produtos</a>
+                <ul class="dropdown-content">
+                    <li><a href="vestido.html">Vestidos</a></li>
+                    <li><a href="shorts.html">Shorts</a></li>
+                    <li><a href="blusa.html">Blusas</a></li>
+                    <li><a href="tenis.html">Sapatos</a></li>
+                    <li><a href="bolsa.html">Bolsas</a></li>
+                    <li><a href="saia.html">Saias</a></li>
+                </ul>
+            </li>
+            <li><a href="CarrinhoWs.html">Carrinho</a></li>
+            <li><a href="LoginWs.html">Login</a></li>
+            <li><a href="CadastroWs.html">Cadastro</a></li>
+        </ul>
+       
+    </nav>
+    <main>
+        <!-- seção do carrinho -->
+         <section class="carrinho">
+            <!-- tabela dos produtos -->
+             <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Cor e Tamanhos</th>
+                        <th>Preço Unitário</th>
+                        <th>Total</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- produto 2 -->
+                    <tr>
+                        <h1></h1>
+                        <td>
+                          <img src="/IMG/salto1.png"  class="img"></td>
+                        <td>
+                            <input type="number" value="2" min="1"
+                            class="quantidade">
+                            <td>
+                                <label for="tamanhos">tamanhos:</label>
+                                <select id="tamanhos">
+                                <option>33</option>
+                                <option>34</option>
+                                <option>35</option>
+                                <option>36</option>
+                                <option>37</option>
+                                <option>38</option>
+                                </select>
+                                <!-- seleção de cor -->
+                                <label for="cor">Cores:</label>
+                                <select id="cor">
+                                <option>Vermelho</option>
+                                <option>Preto</option>
+                                <option>Dourado</option>
+                                <option>Marrom</option>
+                                <option>Cinza</option>
+                                </select>
+                            </td>
+                        </td>
+                        <td class="preco-unitario">R$7000.00</td>
+                        <td class="preco-total">R$7000.00</td>
+                        <td>
+                            <button class="remover-produto">Remover</button>
+                        </td>
+                      </tr>
+                        
+                       <!-- produto 2 -->
+                       <tr>
+                        <h1></h1>
+                        <td>
+                     <img src="/IMG/saia4.png" alt=""></td>
+                        <td>
+                            <input type="number" value="2" min="1"
+                            class="quantidade">
+                            <td>
+                                <label for="tamanhos">tamanhos:</label>
+                                <select id="tamanhos">
+                                <option>40</option>
+                                <option>41</option>
+                                <option>42</option>
+                                <option>43</option>
+                                <option>44</option>
+                                <option>45</option>
+                                <option>46</option>
+                                </select>
+                                <!-- seleção de cor -->
+                                <label for="cor">Cores:</label>
+                                <select id="cor">
+                                <option>Azul</option>
+                                <option>Rosa</option>
+                                <option>Cinza</option>
+                                <option>Verde</option>
+                                <option>Preto</option>
+                                <option>Bege</option>
+                                </select>
+                            </td>
+                        </td>
+                        <td class="preco-unitario">R$8000.00</td>
+                        <td class="preco-total">R$8000.00</td>
+                        <td>
+                            <button class="remover-produto">Remover</button>
+                        </td>
+                      </tr>
+                       <!-- produto 2 -->
+                       <tr>
+                        <h1></h1>
+                        <td>
+                     <img src="/IMG/vestido5.png" alt=""></td>
+                        <td>
+                            <input type="number" value="2" min="1"
+                            class="quantidade">
+                            <td>
+                                <label for="tamanhos">tamanhos:</label>
+                                <select id="tamanhos">
+                                <option>XS</option>
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                                <option>XL</option>
+                                <option>XXXL</option>
+                                </select>
+                                <!-- seleção de cor -->
+                                <label for="cor">Cores:</label>
+                                <select id="cor">
+                                <option>Vinho</option>
+                                <option>Azul</option>
+                                <option>Rosa</option>
+                                <option>Bege</option>
+                                <option>Preto</option>
+                                <option>Cinza</option>
+                                <option>Branco</option>
+                                </select>
+                            </td>
+                        </td>
+                        <td class="preco-unitario">R$20000.00</td>
+                        <td class="preco-total">R$2000.00</td>
+                        <td>
+                            <button class="remover-produto">Remover</button>
+                        </td>
+                      </tr>
+                      </tr>
+                </tbody>
+             </table>
+             <!-- exibição do total final -->
+              <div class="total-final">
+                <h3>Total Final: <span id="total-final">120,00</span></h3>
+              </div>
+         </section>
+       </main> 
+       <!-- adiciona o script para interatividade -->
+        <script src="/js/carrinho.js"></script>
+</body>
+</html>
